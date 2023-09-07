@@ -1,10 +1,10 @@
-package search;
+package org.micheleverriello.search;
 
-import models.ListNode;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
+import org.micheleverriello.models.ListNode;
 
 public class LinearSearchTest {
 

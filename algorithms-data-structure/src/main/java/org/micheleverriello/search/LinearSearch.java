@@ -1,11 +1,14 @@
-package search;
+package org.micheleverriello.search;
 
-import models.ListNode;
+import org.micheleverriello.models.ListNode;
 
 public class LinearSearch {
 
     /**
      * Linear Search applied on a simple array
+     *
+     * This algorithm returns the first occurence of the found element,
+     * if you want the last, simply slide from size to zero
      *
      * @param array the given array
      * @param searchValue the value to find

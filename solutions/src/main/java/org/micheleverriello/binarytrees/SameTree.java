@@ -26,7 +26,6 @@ public class SameTree {
         } else {
             return false;
         }
-
     }
 
 

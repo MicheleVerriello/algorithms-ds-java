@@ -1,4 +1,4 @@
-package models;
+package org.micheleverriello.models;
 
 public class ListNode {
 
