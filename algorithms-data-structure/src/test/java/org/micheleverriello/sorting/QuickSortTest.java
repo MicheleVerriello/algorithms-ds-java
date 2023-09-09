@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class SelectionSortTest {
+public class QuickSortTest {
+
+
 
     static int[] array;
 
@@ -17,7 +19,7 @@ public class SelectionSortTest {
 
     @Test
     public void sort() {
-        int[] result = SelectionSort.sort(array);
+        int[] result = QuickSort.sort(array, 0 , array.length - 1);
         int[] expectedResult = new int[]{-22, -1, 4, 4, 7, 22, 23, 100};
 
         assertArrayEquals(expectedResult, result);

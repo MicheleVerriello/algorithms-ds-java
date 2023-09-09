@@ -16,7 +16,7 @@ public class BubbleSortTest {
     }
 
     @Test
-    public void bubbleSort() {
+    public void sort() {
         int[] result = BubbleSort.sort(array);
         int[] expectedResult = new int[]{-22, -1, 3, 4, 5, 6, 7, 11, 100};
 

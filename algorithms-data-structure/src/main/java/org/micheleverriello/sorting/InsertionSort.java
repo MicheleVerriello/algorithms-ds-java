@@ -2,7 +2,7 @@ package org.micheleverriello.sorting;
 
 public class InsertionSort {
 
-    public static int[] insertionSort(int[] array) {
+    public static int[] sort(int[] array) {
 
         int size = array.length;
 

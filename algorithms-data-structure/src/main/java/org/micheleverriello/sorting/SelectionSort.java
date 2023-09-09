@@ -2,7 +2,7 @@ package org.micheleverriello.sorting;
 
 public class SelectionSort {
 
-    public static int[] selectionSort(int[] array) {
+    public static int[] sort(int[] array) {
 
         int size = array.length;
 

@@ -16,8 +16,8 @@ public class InsertionSortTest {
     }
 
     @Test
-    public void insertionSort() {
-        int[] result = InsertionSort.insertionSort(array);
+    public void sort() {
+        int[] result = InsertionSort.sort(array);
         int[] expectedResult = new int[]{3, 4, 5, 6, 7};
 
         assertArrayEquals(expectedResult, result);
