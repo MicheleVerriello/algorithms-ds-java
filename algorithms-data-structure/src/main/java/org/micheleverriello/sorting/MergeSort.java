@@ -14,15 +14,8 @@ public class MergeSort {
         int[] leftHalf = new int[midIndex];
         int[] rightHalf = new int[size - midIndex];
 
-        // System.arraycopy(array, 0, leftHalf, 0, midIndex);
-        for (int i = 0; i < midIndex; i++) {
-            leftHalf[i] = array[i];
-        }
-
-        // System.arraycopy(array, midIndex, rightHalf, 0, rightHalf.length);
-        for (int i = 0; i < rightHalf.length; i++) {
-            rightHalf[i] = array[i + midIndex];
-        }
+        System.arraycopy(array, 0, leftHalf, 0, midIndex);
+        System.arraycopy(array, midIndex, rightHalf, 0, rightHalf.length);
 
         sort(leftHalf);
         sort(rightHalf);
