@@ -1,6 +1,7 @@
 package org.micheleverriello.trees;
 
 import java.util.ArrayDeque;
+import java.util.List;
 
 public class TreeOperations implements ITreeOperations{
     @Override
@@ -192,6 +193,23 @@ public class TreeOperations implements ITreeOperations{
     @Override
     public int maxPathToLeafSum(TreeNode root) {
         return 0;
+    }
+
+    @Override
+    public TreeNode minimalTree(List<Integer> orderedList) {
+        int size = orderedList.size();
+        TreeNode root = new TreeNode(orderedList.get(size / 2), null, null);
+
+        List<Integer> left = orderedList.subList(0, (size / 2) - 1);
+        List<Integer> right = orderedList.subList((size / 2) + 1, size - 1);
+        int leftSize = left.size();
+        int rightSize = right.size();
+
+        while(leftSize > 0 && rightSize > 0) {
+            root.setLeft(new TreeNode(left.get(leftSize / 2), null, null));
+            root.setRight(new TreeNode(right.get(rightSize / 2), null, null));
+        }
+
     }
 
     private boolean isLeafNode(TreeNode node) {

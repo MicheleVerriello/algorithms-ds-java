@@ -1,5 +1,7 @@
 package org.micheleverriello.trees;
 
+import java.util.List;
+
 public interface ITreeOperations {
     void preOrderTraversal(TreeNode root);
     void inOrderTraversal(TreeNode root);
@@ -14,4 +16,5 @@ public interface ITreeOperations {
     TreeNode breadthFirstSearch(TreeNode root, int target);
     int treeSum(TreeNode root);
     int maxPathToLeafSum(TreeNode root);
+    TreeNode minimalTree(List<Integer> orderedList); // Cracking the coding interview 109
 }
